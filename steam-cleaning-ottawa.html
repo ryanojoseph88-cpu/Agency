@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Steam Cleaning Ottawa | Car Detail Nerds</title>
+<meta name="description" content="Professional car steam cleaning in Ottawa. Sanitizes, deodorizes, and deep-cleans your interior without harsh chemicals. Mobile service.">
+<link rel="canonical" href="https://cardetailnerds.ca/steam-cleaning-ottawa">
+<meta property="og:title" content="Steam Cleaning Ottawa | Car Detail Nerds">
+<meta property="og:description" content="Professional car steam cleaning in Ottawa. Sanitizes, deodorizes, and deep-cleans your interior without harsh chemicals. Mobile service.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --sky-50:#F0F9FF;--sky-100:#E0F2FE;--sky-200:#BAE6FD;--sky-300:#7DD3FC;
+  --sky-400:#38BDF8;--sky-500:#0EA5E9;--sky-600:#0284C7;--sky-700:#0369A1;
+  --ink-900:#1B262C;--ink-800:#28353D;--ink-700:#3A4A54;--ink-600:#54646E;
+  --ink-500:#71828C;--ink-400:#93A2AB;--ink-300:#BCC8CE;--ink-200:#DCE4E8;
+  --ink-100:#EDF1F3;--ink-50:#F6F8F9;--white:#FFFFFF;
+  --amber-400:#FBBF24;--green-500:#16A34A;--green-soft:#DCFCE7;
+  --font-display:'Plus Jakarta Sans',system-ui,sans-serif;
+  --font-sans:'Plus Jakarta Sans',system-ui,sans-serif;
+  --font-mono:'JetBrains Mono',ui-monospace,monospace;
+  --container-max:1100px;--radius-md:12px;--radius-lg:16px;--radius-full:9999px;
+  --shadow-sm:0 1px 3px rgba(27,38,44,.08);--shadow-md:0 4px 12px rgba(27,38,44,.08);
+  --shadow-lg:0 12px 28px rgba(27,38,44,.12);
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:var(--font-sans);font-size:1rem;line-height:1.6;
+  color:#3A4A54;background:#fff;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{margin:0;font-family:var(--font-display);color:#1B262C;
+  line-height:1.15;letter-spacing:-.02em;font-weight:800}
+p{margin:0}a{color:#0284C7;text-decoration:none}a:hover{text-decoration:underline}
+ul{margin:0;padding:0;list-style:none}
+
+/* Nav */
+.nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.97);
+  backdrop-filter:blur(8px);border-bottom:1px solid #DCE4E8;
+  padding:0 24px;height:64px;display:flex;align-items:center;justify-content:space-between}
+.nav__logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:1.1rem;
+  color:#1B262C;text-decoration:none}
+.nav__logo svg{width:36px;height:36px;flex-shrink:0}
+.nav__links{display:flex;gap:6px;align-items:center}
+.nav__link{font-size:.875rem;font-weight:600;color:#3A4A54;padding:6px 14px;
+  border-radius:8px;transition:background .15s}
+.nav__link:hover{background:#F0F9FF;color:#0284C7;text-decoration:none}
+.nav__cta{background:#0EA5E9;color:#fff;padding:8px 18px;border-radius:9999px;
+  font-size:.875rem;font-weight:700;transition:background .15s;text-decoration:none}
+.nav__cta:hover{background:#0284C7;text-decoration:none;color:#fff}
+
+/* Hero */
+.hero{background:linear-gradient(135deg,#0F1E26 0%,#1B3A4B 60%,#0369A1 100%);
+  padding:80px 24px;text-align:center;color:#fff;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;inset:0;
+  background:radial-gradient(circle at 70% 50%,rgba(14,165,233,.18) 0%,transparent 60%)}
+.hero__eyebrow{font-size:.75rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;
+  color:#38BDF8;margin-bottom:16px;display:block}
+.hero h1{font-size:clamp(2rem,5vw,3.25rem);color:#fff;margin-bottom:20px;position:relative}
+.hero h1 span{color:#38BDF8}
+.hero p{font-size:1.125rem;color:rgba(255,255,255,.8);max-width:560px;margin:0 auto 36px;
+  line-height:1.65;position:relative}
+.hero__btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;position:relative}
+.btn{display:inline-flex;align-items:center;gap:8px;font-weight:700;font-size:.9375rem;
+  padding:12px 24px;border-radius:9999px;cursor:pointer;border:none;
+  text-decoration:none;transition:all .15s}
+.btn-primary{background:#0EA5E9;color:#fff;box-shadow:0 8px 20px rgba(14,165,233,.35)}
+.btn-primary:hover{background:#0284C7;color:#fff;text-decoration:none;transform:translateY(-1px)}
+.btn-outline{background:transparent;color:#fff;border:2px solid rgba(255,255,255,.4)}
+.btn-outline:hover{background:rgba(255,255,255,.1);color:#fff;text-decoration:none}
+
+/* Location tag in hero */
+.hero__location{display:inline-flex;align-items:center;gap:6px;
+  background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);
+  color:rgba(255,255,255,.9);font-size:.8125rem;font-weight:600;
+  padding:6px 14px;border-radius:9999px;margin-bottom:20px}
+
+/* Page content container */
+.page{max-width:var(--container-max);margin:0 auto;padding:64px 24px}
+.section{margin-bottom:64px}
+.section-title{font-size:clamp(1.5rem,3vw,2rem);margin-bottom:12px}
+.section-sub{font-size:1.0625rem;color:#54646E;margin-bottom:36px;max-width:620px;line-height:1.6}
+
+/* Two-col layout */
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+@media(max-width:720px){.two-col{grid-template-columns:1fr}}
+
+/* Cards */
+.card-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:20px}
+.card{background:#F6F8F9;border:1px solid #DCE4E8;border-radius:16px;padding:28px;
+  transition:box-shadow .15s}
+.card:hover{box-shadow:var(--shadow-md)}
+.card__icon{width:44px;height:44px;background:#E0F2FE;border-radius:10px;
+  display:flex;align-items:center;justify-content:center;margin-bottom:16px}
+.card__icon svg{width:22px;height:22px;stroke:#0284C7;fill:none;stroke-width:2;
+  stroke-linecap:round;stroke-linejoin:round}
+.card h3{font-size:1.0625rem;margin-bottom:8px}
+.card p{font-size:.9375rem;color:#54646E;line-height:1.55}
+
+/* Check list */
+.check-list{display:flex;flex-direction:column;gap:10px}
+.check-list li{display:flex;align-items:flex-start;gap:12px;font-size:.9375rem;color:#3A4A54}
+.check-list li::before{content:'';flex-shrink:0;width:20px;height:20px;
+  background:#E0F2FE;border-radius:50%;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230284C7' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E");
+  background-size:13px;background-repeat:no-repeat;background-position:center;margin-top:2px}
+
+/* Pricing strip */
+.price-strip{background:linear-gradient(135deg,#0F1E26,#1B3A4B);border-radius:20px;
+  padding:48px;color:#fff;display:flex;align-items:center;justify-content:space-between;
+  flex-wrap:wrap;gap:24px}
+.price-strip h2{font-size:1.75rem;color:#fff;margin-bottom:8px}
+.price-strip p{color:rgba(255,255,255,.75);font-size:1rem;margin:0}
+.price-strip .price{font-size:2.5rem;font-weight:800;color:#38BDF8;
+  font-family:var(--font-mono);white-space:nowrap}
+.price-strip .price span{font-size:1rem;color:rgba(255,255,255,.6);font-weight:400}
+
+/* FAQ */
+.faq{display:flex;flex-direction:column;gap:4px}
+.faq-item{border:1px solid #DCE4E8;border-radius:12px;overflow:hidden}
+.faq-q{padding:18px 20px;font-weight:700;font-size:.9375rem;color:#1B262C;cursor:pointer;
+  display:flex;justify-content:space-between;align-items:center;background:#F6F8F9}
+.faq-q::after{content:'▾';font-size:1.1rem;color:#71828C}
+.faq-a{padding:0 20px 18px;font-size:.9375rem;color:#54646E;line-height:1.6}
+
+/* Location grid */
+.loc-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px}
+.loc-pill{background:#F0F9FF;border:1px solid #BAE6FD;border-radius:10px;
+  padding:14px 18px;font-weight:600;font-size:.875rem;color:#0284C7;
+  text-decoration:none;display:block;transition:all .15s;text-align:center}
+.loc-pill:hover{background:#E0F2FE;text-decoration:none;transform:translateY(-1px)}
+
+/* Related links */
+.related{display:flex;flex-wrap:wrap;gap:8px}
+.related a{background:#F6F8F9;border:1px solid #DCE4E8;border-radius:8px;
+  padding:8px 14px;font-size:.8125rem;font-weight:600;color:#3A4A54;text-decoration:none;
+  transition:all .15s}
+.related a:hover{background:#E0F2FE;border-color:#BAE6FD;color:#0284C7;text-decoration:none}
+
+/* Stars */
+.stars{color:#FBBF24;font-size:1rem;letter-spacing:2px}
+.review-card{background:#fff;border:1px solid #DCE4E8;border-radius:16px;padding:24px;
+  box-shadow:var(--shadow-sm)}
+.review-card p{font-size:.9375rem;color:#3A4A54;line-height:1.6;margin-bottom:12px;
+  font-style:italic}
+.review-card strong{font-size:.875rem;color:#1B262C}
+
+/* CTA section */
+.cta-section{background:#F0F9FF;border:1px solid #BAE6FD;border-radius:20px;
+  padding:56px 48px;text-align:center}
+.cta-section h2{margin-bottom:12px}
+.cta-section p{color:#54646E;margin-bottom:28px;font-size:1.0625rem;max-width:480px;margin-left:auto;margin-right:auto}
+
+/* Breadcrumb */
+.breadcrumb{display:flex;align-items:center;gap:8px;font-size:.8125rem;
+  color:#71828C;padding:16px 24px;max-width:var(--container-max);margin:0 auto}
+.breadcrumb a{color:#0284C7;text-decoration:none}
+.breadcrumb a:hover{text-decoration:underline}
+.breadcrumb span{color:#BCC8CE}
+
+/* Footer */
+.footer{background:#1B262C;color:rgba(255,255,255,.65);padding:48px 24px 32px}
+.footer__inner{max-width:var(--container-max);margin:0 auto;
+  display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px}
+@media(max-width:720px){.footer__inner{grid-template-columns:1fr 1fr}}
+.footer__brand{color:#fff;font-weight:800;font-size:1rem;margin-bottom:10px;display:block}
+.footer__tagline{font-size:.875rem;line-height:1.55}
+.footer__col h4{color:rgba(255,255,255,.9);font-size:.8125rem;font-weight:700;
+  letter-spacing:.08em;text-transform:uppercase;margin-bottom:14px}
+.footer__col a{display:block;font-size:.875rem;color:rgba(255,255,255,.55);
+  margin-bottom:8px;text-decoration:none;transition:color .15s}
+.footer__col a:hover{color:#38BDF8;text-decoration:none}
+.footer__bottom{max-width:var(--container-max);margin:32px auto 0;
+  padding-top:24px;border-top:1px solid rgba(255,255,255,.1);
+  display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;
+  font-size:.8125rem}
+@media(max-width:600px){.footer__inner{grid-template-columns:1fr}.nav__links{display:none}}
+</style>
+</head>
+<body>
+<nav class="nav" aria-label="Main navigation">
+  <a href="../index.html" class="nav__logo"><svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="36" height="36" rx="8" fill="#0EA5E9"/>
+  <path d="M6 22l3-7h18l3 7" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+  <path d="M6 22h24v4a1 1 0 01-1 1H7a1 1 0 01-1-1v-4z" fill="#fff" fill-opacity=".9"/>
+  <circle cx="11" cy="22" r="2.5" fill="#0EA5E9" stroke="#fff" stroke-width="1.5"/>
+  <circle cx="25" cy="22" r="2.5" fill="#0EA5E9" stroke="#fff" stroke-width="1.5"/>
+  <rect x="10" y="16" width="7" height="5" rx="1" fill="#BAE6FD"/>
+  <rect x="19" y="16" width="7" height="5" rx="1" fill="#BAE6FD"/>
+  <circle cx="12" cy="16" r="2" fill="#fff" stroke="#0EA5E9" stroke-width="1"/>
+  <circle cx="24" cy="16" r="2" fill="#fff" stroke="#0EA5E9" stroke-width="1"/>
+  <path d="M11 16a2 2 0 000-2m2 2a2 2 0 000-2m10 2a2 2 0 000-2m2 2a2 2 0 000-2" stroke="#0369A1" stroke-width=".75"/>
+</svg> Car Detail Nerds</a>
+  <div class="nav__links">
+    <a href="../pages/interior-detailing-ottawa.html" class="nav__link">Interior</a>
+    <a href="../pages/exterior-detailing-ottawa.html" class="nav__link">Exterior</a>
+    <a href="../pages/mobile-detailing-ottawa.html" class="nav__link">Mobile</a>
+    <a href="../pages/about.html" class="nav__link">About</a>
+    <a href="../index.html#booking" class="nav__cta">Book Now</a>
+  </div>
+</nav>
+<section class="hero">
+  <div class="hero__location">📍 Ottawa · Mobile Service</div>
+  <span class="hero__eyebrow">Steam Cleaning · Ottawa</span>
+  <h1>Car Steam Cleaning in <span>Ottawa</span></h1>
+  <p>High-temperature steam cuts through grease, kills bacteria, and cleans surfaces a cloth never could. It's the most effective interior cleaning method available.</p>
+  <div class="hero__btns">
+    <a href="../index.html#booking" class="btn btn-primary">Book Now &rarr;</a>
+    <a href="../index.html#packages" class="btn btn-outline">See Pricing</a>
+  </div>
+</section><div class="breadcrumb"><a href="../index.html">Home</a><span>/</span> <a href="mobile-detailing-ottawa.html">Services</a><span>/</span> <span>Steam Cleaning Ottawa</span></div><div class="page">
+  <section class="section">
+    <h2 class="section-title">What's Included</h2>
+    <div class="two-col">
+      <ul class="check-list"><li>Steam clean dashboard, console, and door panels</li><li>Steam vents, cup holders, and crevices</li><li>Steam seats (fabric or leather)</li><li>Steam headliner and sun visors</li><li>No harsh chemical residue — safe for all surfaces</li><li>Deodorizes by eliminating odour-causing bacteria</li><li>Follow-up microfibre wipe-down on all surfaces</li></ul>
+      <div>
+        <h3 style="margin-bottom:12px">Why It Matters</h3>
+        <p style="color:#54646E;line-height:1.65">Steam cleaning uses temperatures above 120°C to break down grease, kill bacteria, and dissolve grime — without soaking surfaces or leaving chemical residue. It's particularly effective in Ottawa winters where salt, moisture, and condensation create bacterial buildup in seats and carpet.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="price-strip">
+      <div>
+        <h2>Steam Cleaning</h2>
+        <p>Add-on or standalone service</p>
+      </div>
+      <div>
+        <div class="price">Included</div>
+        <div style="color:rgba(255,255,255,.55);font-size:.875rem;margin-top:4px">In all interior detail packages</div>
+      </div>
+      <a href="../index.html#booking" class="btn btn-primary">Book Now &rarr;</a>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title">What Our Customers Say</h2>
+    <div class="card-grid"><div class="review-card">
+      <div class="stars">★★★★★</div>
+      <p>"My SUV looks brand new — the interior was disgusting after a road trip. They got every single crumb and dog hair out. Insane job."</p>
+      <strong>Melissa T. &mdash; Barrhaven</strong>
+    </div><div class="review-card">
+      <div class="stars">★★★★★</div>
+      <p>"Booked online and they showed up on time. No fuss, no upsells. Car was spotless. Will be a regular customer."</p>
+      <strong>Ahmed K. &mdash; Kanata</strong>
+    </div></div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title">FAQ</h2>
+    <div class="faq"><div class="faq-item">
+      <div class="faq-q">Is steam safe for leather?</div>
+      <div class="faq-a">Yes — steam is actually gentler on leather than many chemical cleaners. We follow with a leather conditioner to restore moisture.</div>
+    </div><div class="faq-item">
+      <div class="faq-q">Can steam remove mold?</div>
+      <div class="faq-a">Steam kills mold spores on contact. For severe mold growth, additional treatment may be needed.</div>
+    </div><div class="faq-item">
+      <div class="faq-q">How do I book?</div>
+      <div class="faq-a">Use the booking form on our website — pick your package, vehicle size, and preferred date and time. We'll confirm within a few hours.</div>
+    </div><div class="faq-item">
+      <div class="faq-q">Do you offer recurring detailing?</div>
+      <div class="faq-a">Yes — many clients book monthly or seasonally. Ask us about repeat-client rates when you book.</div>
+    </div></div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title">We Cover All Ottawa Areas</h2>
+    <div class="loc-grid"><a href="mobile-car-detailing-barrhaven.html" class="loc-pill">📍 Barrhaven</a><a href="mobile-car-detailing-kanata.html" class="loc-pill">📍 Kanata</a><a href="mobile-car-detailing-nepean.html" class="loc-pill">📍 Nepean</a><a href="mobile-car-detailing-richmond.html" class="loc-pill">📍 Richmond</a><a href="mobile-car-detailing-stittsville.html" class="loc-pill">📍 Stittsville</a><a href="mobile-car-detailing-manotick.html" class="loc-pill">📍 Manotick</a></div>
+  </section>
+
+  <div class="cta-section">
+    <h2>Book This Service Today</h2>
+    <p>Mobile service — we come to your driveway anywhere in Ottawa.</p>
+    <a href="../index.html#booking" class="btn btn-primary">Book Now &rarr;</a>
+  </div>
+
+  <section class="section" style="margin-top:48px">
+    <h4 style="margin-bottom:14px;color:#71828C;font-size:.8125rem;text-transform:uppercase;letter-spacing:.08em">Related Services</h4>
+    <div class="related"><a href="interior-detailing-ottawa.html">Interior Detailing</a><a href="interior-deep-clean-ottawa.html">Interior Deep Clean</a><a href="leather-cleaning-ottawa.html">Leather Cleaning</a><a href="carpet-shampoo-ottawa.html">Carpet Shampoo</a></div>
+  </section>
+</div>
+<footer class="footer">
+  <div class="footer__inner">
+    <div>
+      <span class="footer__brand">Car Detail Nerds</span>
+      <p class="footer__tagline">Professional mobile car detailing in Ottawa, Barrhaven, Kanata, Nepean, Stittsville, Richmond &amp; Manotick. We come to you.</p>
+    </div>
+    <div class="footer__col">
+      <h4>Services</h4>
+      <a href="interior-detailing-ottawa.html">Interior Detailing</a>
+      <a href="exterior-detailing-ottawa.html">Exterior Detailing</a>
+      <a href="car-wash-ottawa.html">Car Wash</a>
+      <a href="commercial-vehicle-detailing-ottawa.html">Commercial</a>
+      <a href="steam-cleaning-ottawa.html">Steam Cleaning</a>
+    </div>
+    <div class="footer__col">
+      <h4>Locations</h4>
+      <a href="mobile-car-detailing-barrhaven.html">Barrhaven</a>
+      <a href="mobile-car-detailing-kanata.html">Kanata</a>
+      <a href="mobile-car-detailing-nepean.html">Nepean</a>
+      <a href="mobile-car-detailing-richmond.html">Richmond</a>
+      <a href="mobile-car-detailing-stittsville.html">Stittsville</a>
+      <a href="mobile-car-detailing-manotick.html">Manotick</a>
+    </div>
+    <div class="footer__col">
+      <h4>Company</h4>
+      <a href="about.html">About Us</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+      <a href="blog.html">Blog</a>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <span>&copy; 2025 Car Detail Nerds &mdash; Ottawa, ON</span>
+    <span>Mobile Car Detailing &middot; Ottawa &middot; 613-XXX-XXXX</span>
+  </div>
+</footer>
+</body>
+</html>
