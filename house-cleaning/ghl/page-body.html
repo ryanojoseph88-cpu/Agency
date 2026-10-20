@@ -1,0 +1,133 @@
+<!-- Centrepointe Home Cleaning: paste this whole file into a GoHighLevel Custom HTML element. Styles are scoped to #cphc so they do not clash with GHL. -->
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
+#cphc{--green-900:#0F3D33;--green-700:#1B6B58;--green-600:#238570;--green-100:#E3F3EE;--green-50:#F2FAF7;
+--ink:#1E2B28;--ink-soft:#52625E;--line:#DCE7E3;--accent:#F5B335;--white:#fff;--r:14px;--max:1080px;
+--font:'Inter',system-ui,-apple-system,sans-serif;
+margin:0;font-family:var(--font);font-size:16px;color:var(--ink);line-height:1.6;background:#fff;-webkit-font-smoothing:antialiased;text-align:left}
+#cphc *,#cphc *::before,#cphc *::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+#cphc h1,#cphc h2,#cphc h3{font-family:var(--font);font-weight:800;line-height:1.15;letter-spacing:-.02em;margin:0 0 .5em;color:var(--green-900)}
+#cphc h1{font-size:clamp(2rem,5vw,3.2rem)}#cphc h2{font-size:clamp(1.5rem,3.5vw,2.2rem)}#cphc h3{font-size:1.15rem;font-weight:700}
+#cphc p{margin:0 0 1em}#cphc a{color:var(--green-700)}
+#cphc .wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
+#cphc section{padding:64px 0}#cphc .alt{background:var(--green-50)}
+#cphc .lead{font-size:1.15rem;color:var(--ink-soft);max-width:60ch}
+#cphc .btn{display:inline-block;background:var(--accent);color:#2a1f00;padding:14px 26px;border-radius:999px;text-decoration:none;border:0;font:inherit;font-weight:700;cursor:pointer}
+#cphc .btn:hover{filter:brightness(.95)}
+#cphc .btn.ghost{background:transparent;border:2px solid #fff;color:#fff}
+#cphc header.nav{position:sticky;top:0;z-index:10;background:#fff;border-bottom:1px solid var(--line)}
+#cphc .nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;gap:16px}
+#cphc .logo{font-weight:800;color:var(--green-900);text-decoration:none;font-size:1.1rem}
+#cphc .nav nav{display:flex;gap:18px;align-items:center}
+#cphc .nav nav a{text-decoration:none;font-weight:600;font-size:.92rem;color:var(--ink)}
+#cphc .nav .call{white-space:nowrap;background:var(--green-700);color:#fff;padding:8px 16px;border-radius:999px}
+#cphc .hero{background:linear-gradient(135deg,var(--green-900),var(--green-700));color:#fff;padding:80px 0}
+#cphc .hero h1{color:#fff}#cphc .hero .lead{color:#D5EBE4}
+#cphc .hero .cta{display:flex;gap:12px;flex-wrap:wrap;margin:28px 0 20px}
+#cphc .trust{display:flex;gap:20px;flex-wrap:wrap;list-style:none;padding:0;margin:0;font-size:.92rem;color:#D5EBE4}
+#cphc .trust li::before{content:"✓ ";color:var(--accent);font-weight:700}
+#cphc .grid{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+#cphc .card{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:24px}
+#cphc .card p{margin:0;color:var(--ink-soft)}
+#cphc .steps{counter-reset:s}#cphc .steps .card{position:relative;padding-top:48px}
+#cphc .steps .card::before{counter-increment:s;content:counter(s);position:absolute;top:14px;left:24px;width:26px;height:26px;border-radius:50%;background:var(--green-700);color:#fff;font-weight:700;text-align:center;line-height:26px;font-size:.85rem}
+#cphc .areas{display:flex;flex-wrap:wrap;gap:10px;list-style:none;padding:0;margin:20px 0 0}
+#cphc .areas li{background:var(--green-100);color:var(--green-900);padding:6px 14px;border-radius:999px;font-weight:600;font-size:.9rem}
+#cphc details{border-bottom:1px solid var(--line);padding:16px 0}
+#cphc summary{font-weight:700;cursor:pointer}#cphc details p{margin:10px 0 0;color:var(--ink-soft)}
+#cphc form{display:grid;gap:14px;max-width:560px}
+#cphc label{font-weight:600;font-size:.9rem;display:grid;gap:6px}
+#cphc input,#cphc select,#cphc textarea{font:inherit;padding:12px;border:1px solid #BCCFC9;border-radius:10px;width:100%;background:#fff;color:var(--ink)}
+#cphc .hp{position:absolute;left:-9999px}
+#cphc footer{background:var(--green-900);color:#BFD8D0;padding:40px 0;font-size:.92rem}
+#cphc footer a{color:#fff}
+#cphc .sticky-call{display:none}
+@media(max-width:700px){#cphc .nav nav a:not(.call){display:none}#cphc section{padding:44px 0}#cphc .hero{padding:56px 0}
+#cphc .sticky-call{display:block;position:fixed;bottom:0;left:0;right:0;background:var(--accent);text-align:center;padding:14px;font-weight:800;color:#2a1f00;text-decoration:none;z-index:20}
+#cphc{padding-bottom:52px}}
+</style>
+<div id="cphc">
+<header class="nav"><div class="wrap">
+ <a class="logo" href="#top">Centrepointe Home Cleaning</a>
+ <nav>
+  <a href="#services">Services</a><a href="#how">How it works</a><a href="#areas">Areas</a><a href="#faq">FAQ</a>
+  <a class="call" href="tel:+16135550100">(613) 555-0100</a>
+ </nav>
+</div></header>
+
+<main id="top">
+<section class="hero"><div class="wrap">
+ <h1>House cleaning in Centrepointe, Ottawa</h1>
+ <p class="lead">Reliable, detail-focused cleaners for homes and condos in Centrepointe and nearby Nepean. Fixed-price quotes, supplies included, and the same cleaner each visit.</p>
+ <div class="cta"><a class="btn" href="#quote">Get a free quote</a><a class="btn ghost" href="tel:+16135550100">Call (613) 555-0100</a></div>
+ <ul class="trust"><li>Supplies &amp; equipment included</li><li>Fixed-price quotes</li><li>Local to Centrepointe</li></ul>
+</div></section>
+
+<section id="services"><div class="wrap">
+ <h2>Cleaning services in Centrepointe</h2>
+ <p class="lead">Pick what fits. Not sure? We'll recommend one when you request a quote.</p>
+ <div class="grid" style="margin-top:28px">
+  <div class="card"><h3>Regular cleaning</h3><p>Weekly, bi-weekly or monthly upkeep: kitchens, bathrooms, floors, dusting and surfaces.</p></div>
+  <div class="card"><h3>Deep cleaning</h3><p>Baseboards, inside appliances, grout and build-up. Best for a first visit or seasonal reset.</p></div>
+  <div class="card"><h3>Move-in / move-out</h3><p>Empty-home clean for landlords, tenants and sellers. Helps with deposit returns.</p></div>
+  <div class="card"><h3>Airbnb &amp; rental turnover</h3><p>Fast, consistent turnovers between guests, with linens and restocking on request.</p></div>
+  <div class="card"><h3>Condo &amp; apartment cleaning</h3><p>Efficient cleans for the condos and apartments around Centrepointe and Baseline.</p></div>
+  <div class="card"><h3>Post-renovation cleaning</h3><p>Dust and residue removal after contractors finish.</p></div>
+ </div>
+</div></section>
+
+<section id="how" class="alt"><div class="wrap">
+ <h2>How it works</h2>
+ <div class="grid steps" style="margin-top:28px">
+  <div class="card"><h3>Request a quote</h3><p>Tell us home size, rooms and what you need. Takes a minute.</p></div>
+  <div class="card"><h3>Get a fixed price</h3><p>We reply the same business day with a clear price and available dates.</p></div>
+  <div class="card"><h3>Relax</h3><p>We arrive with supplies, clean to your checklist, and follow up after.</p></div>
+ </div>
+</div></section>
+
+<section id="areas"><div class="wrap">
+ <h2>Serving Centrepointe and nearby neighbourhoods</h2>
+ <p class="lead">Based in west Ottawa, so travel is short and scheduling is flexible.</p>
+ <ul class="areas">
+  <li>Centrepointe</li><li>Craig Henry</li><li>Parkwood Hills</li><li>Fisher Heights</li><li>Meadowlands</li>
+  <li>Pinecrest</li><li>Westcliffe Estates</li><li>Baseline / Algonquin College</li><li>Knoxdale</li><li>Bells Corners</li>
+ </ul>
+</div></section>
+
+<section id="quote" class="alt"><div class="wrap">
+ <h2>Get your free quote</h2>
+ <p class="lead">We reply the same business day.</p>
+ <!-- TODO: replace action with your Formspree/Netlify/Getform endpoint -->
+ <!-- GHL: to send leads into your GHL CRM, delete this <form>...</form> block and paste your GHL form embed code here (Sites > Forms > Integrate form) -->
+ <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" style="margin-top:24px">
+  <label>Name<input name="name" required autocomplete="name"></label>
+  <label>Phone<input name="phone" type="tel" required autocomplete="tel"></label>
+  <label>Email<input name="email" type="email" required autocomplete="email"></label>
+  <label>Service<select name="service"><option>Regular cleaning</option><option>Deep cleaning</option><option>Move-in / move-out</option><option>Airbnb turnover</option><option>Post-renovation</option></select></label>
+  <label>Home size<select name="size"><option>Studio / 1 bed</option><option>2 bed</option><option>3 bed</option><option>4+ bed</option></select></label>
+  <label>Neighbourhood or postal code<input name="location"></label>
+  <label>Anything else?<textarea name="notes" rows="3"></textarea></label>
+  <input class="hp" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
+  <button class="btn" type="submit">Request my quote</button>
+ </form>
+</div></section>
+
+<section id="faq"><div class="wrap">
+ <h2>Frequently asked questions</h2>
+ <details><summary>Do you bring your own cleaning supplies?</summary><p>Yes. We bring all supplies and equipment. If you prefer fragrance-free or specific products, tell us when you book.</p></details>
+ <details><summary>How much does house cleaning cost in Centrepointe?</summary><p>Pricing depends on home size, condition and frequency. Send the quote form and we reply with a fixed price, not an hourly guess.</p></details>
+ <details><summary>Do I need to be home?</summary><p>No. Many clients give us a lockbox or door code. We just need clear entry instructions.</p></details>
+ <details><summary>What is the difference between a regular and a deep clean?</summary><p>A regular clean maintains a home that is already in good shape. A deep clean adds baseboards, inside appliances, detailed bathroom and kitchen scrubbing, and build-up removal. Most first-time clients start with a deep clean.</p></details>
+ <details><summary>Which areas do you serve?</summary><p>Centrepointe and nearby Nepean and west Ottawa neighbourhoods, including Craig Henry, Parkwood Hills, Fisher Heights, Meadowlands, Pinecrest and Bells Corners.</p></details>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+ <p><strong style="color:#fff">Centrepointe Home Cleaning</strong><br>House cleaning in Centrepointe, Nepean &amp; west Ottawa, ON</p>
+ <p><a href="tel:+16135550100">(613) 555-0100</a> · <a href="mailto:hello@example.ca">hello@example.ca</a><br>Mon–Sat, 8am–6pm</p>
+ <p>&copy; <span id="y">2026</span> Centrepointe Home Cleaning</p>
+</div></footer>
+<a class="sticky-call" href="tel:+16135550100">Call for a free quote</a>
+<script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</div>
